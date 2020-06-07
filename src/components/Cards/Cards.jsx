@@ -16,7 +16,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
         <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.infected)}>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
-              Infected
+              Kasallanganlar.
             </Typography>
             <Typography variant="h5" component="h2">
               <CountUp start={0} end={confirmed.value} duration={2.75} separator="," />
@@ -25,14 +25,14 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2" component="p">
-              Number of active cases of COVID-19.
+           COVID-19 bilan kasallanganlar soni.
             </Typography>
           </CardContent>
         </Grid>
         <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.recovered)}>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
-              Recovered
+              To'liq tuzalganlar.
             </Typography>
             <Typography variant="h5" component="h2">
               <CountUp start={0} end={recovered.value} duration={2.75} separator="," />
@@ -41,14 +41,14 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2" component="p">
-              Number of recoveries from COVID-19.
+              COVID-19 dan tuzalganlar soni.
             </Typography>
           </CardContent>
         </Grid>
         <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.deaths)}>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
-              Deaths
+              O'lim holatlari.
             </Typography>
             <Typography variant="h5" component="h2">
               <CountUp start={0} end={deaths.value} duration={2.75} separator="," />
@@ -57,7 +57,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
               {new Date(lastUpdate).toDateString()}
             </Typography>
             <Typography variant="body2" component="p">
-              Number of deaths caused by COVID-19.
+              COVID-19 dan vafot etganlar.
             </Typography>
           </CardContent>
         </Grid>

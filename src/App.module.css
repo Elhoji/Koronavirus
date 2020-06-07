@@ -1,5 +1,13 @@
 body {
-  background-color: rgb(250, 250,250);
+  background-color: #fefbd8;
+}
+
+h1 {
+  background-color: #80ced6;
+}
+
+div {
+  background-color: #d5f4e6;
 }
 
 .container {
@@ -9,8 +17,8 @@ body {
 }
 
 .image {
-  width: 370px;
-  margin-top: 50px;
+  width: 380px;
+  margin-top: 15px;
 }
 
 @media only screen and (max-width: 770px) {
@@ -19,6 +27,6 @@ body {
   }
 
   .image {
-    width: 100%;
+    width: 90%;
   }
 }
